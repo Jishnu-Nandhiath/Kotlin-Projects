@@ -36,11 +36,27 @@ fun main(){
         }
     }
 
+    helloKotlin()
 
+    print("\n")
+
+    print(summer(1,2))
+
+    print("\n")
+
+    print(averageOfTheTwo(1F,2F))
 
 }
+fun averageOfTheTwo(a : Float , b : Float) : Float{
+    return (a+b)/2
+}
 
-fun hello(){
+fun summer(a : Int , b: Int) : Int {
+    return a+b;
+}
+
+fun helloKotlin(){
+    print("Started Kotlin")
 
 }
 

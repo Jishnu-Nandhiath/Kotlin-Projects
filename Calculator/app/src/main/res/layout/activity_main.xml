@@ -32,6 +32,7 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/clear_text"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -42,6 +43,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberSeven"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -52,6 +54,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberFour"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -62,6 +65,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberOne"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -72,6 +76,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/doubleZeros"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -92,6 +97,7 @@
             >
 
             <Button
+                android:id="@+id/operatorDivision"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -103,6 +109,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberEight"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -114,6 +121,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberFive"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -124,6 +132,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberTwo"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -134,6 +143,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberZero"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -155,6 +165,7 @@
             >
 
             <Button
+                android:id="@+id/operatorMultiplication"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -165,6 +176,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberNine"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -175,6 +187,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberSix"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -185,6 +198,7 @@
                 android:textSize="30dp" />
 
             <Button
+                android:id="@+id/numberThree"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -194,6 +208,7 @@
                 android:textColor="@color/black"
                 android:textSize="30dp" />
             <Button
+                android:id="@+id/decimalPoint"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -215,6 +230,7 @@
 
             <com.google.android.material.button.MaterialButton
 
+                android:id="@+id/backspace"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
                 android:layout_margin="10dp"
@@ -225,20 +241,9 @@
                 app:icon="@drawable/ic_baseline_backspace_24"
             />
 
-<!--            <Button-->
-<!--                -->
-<!--                android:layout_width="80dp"-->
-<!--                android:layout_height="75dp"-->
-<!--                android:layout_margin="10dp"-->
-<!--                android:backgroundTint="#F1FF0F"-->
-<!--                android:gravity="center_vertical|center_horizontal"-->
-<!--                android:text="."-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textSize="30dp"-->
-<!--                style="@style/Widget.Material3.Button.IconButton"-->
-<!--                />-->
 
             <Button
+                android:id="@+id/operatorAddition"
             android:layout_width="80dp"
             android:layout_height="75dp"
             android:layout_margin="10dp"
@@ -249,6 +254,7 @@
             android:textSize="30dp" />
 
             <Button
+                android:id="@+id/operatorSubtraction"
             android:layout_width="80dp"
             android:layout_height="75dp"
             android:layout_margin="10dp"
@@ -259,6 +265,7 @@
             android:textSize="30dp" />
 
             <Button
+                android:id="@+id/operatorEquality"
                 android:layout_width="80dp"
                 android:layout_height="170dp"
                 android:layout_margin="10dp"

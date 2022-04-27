@@ -10,19 +10,47 @@ import androidx.core.view.WindowCompat
 
 class MainActivity : AppCompatActivity() {
 
-     var userInputTextView : TextView? = null
-     var isDecimalPoint = false
-    var isLastDigit = false;
-    var isOperatorAdded = false;
-    var operatorString : String? = null
+
+    private var userInputTextView : TextView? = null
+
+    /*
+     isDecimalPoint:
+        decimal point check flag, it is used to prevent two decimal points being added to the same number.
+    */
+
+    private var isDecimalPoint = false
+
+
+    /*
+    * isLastDigit
+    * A flag to check whether the last added value is digit to prevent execution of expression without 2 operands,
+    * also to prevent digit not getting added after decimal points
+    *
+    * */
+
+    private var isLastDigit = false
+
+    /*
+    * isOperatorAdded
+    *   A flag to check whether the operator is added to prevent more than 2 operands being added to the calculator input.
+    *
+    *   Current version only supports two operands at a time. More complex operations can be added later.
+    *
+    * */
+    private var isOperatorAdded = false
+
+
+    private var operatorString : String? = null
     var currentOperationPos : Int = 0
     var currentOperation : MutableList<String> = mutableListOf("","")
-    private var output : Double? = null
+    private var output : Any? = null
+
+    var userInputText : String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
 
-
+        userInputText= userInputTextView?.text.toString()
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -47,6 +75,13 @@ class MainActivity : AppCompatActivity() {
         val backspace : Button = findViewById(R.id.backspace)
         val numberZero : Button = findViewById(R.id.numberZero)
         val doubleZero : Button= findViewById(R.id.doubleZeros)
+
+        backspace.setOnClickListener {
+            if(userInputText!!.length > 0)
+            {
+                onBackSpace()
+            }
+        }
 
         operatorEquality.setOnClickListener {
             onEqual()
@@ -117,9 +152,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onNumberButtonClick(buttonText : String){
-        currentOperation[currentOperationPos]+=buttonText
-        userInputTextView?.append(buttonText)
-        isLastDigit = true
+        if(currentOperation[currentOperationPos].length < 10){
+            currentOperation[currentOperationPos]+=buttonText
+            userInputTextView?.append(buttonText)
+            isLastDigit = true
+        }
     }
 
     fun clearInput(){
@@ -141,16 +178,32 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun updateFlags(){
+
+    }
+
+    fun onBackSpace(){
+            var lastChar : Char? = userInputText?.last()
+            if(lastChar == '.'){
+                userInputTextView?.text = userInputText?.dropLast(1)
+                isDecimalPoint = false
+            }else if(lastChar!!.isDigit()){
+                userInputTextView?.text = userInputText?.dropLast(1)
+            }else{
+                userInputTextView?.text = userInputText?.dropLast(2)
+            }
+    }
+
     fun onOperator(operator : String){
         if(isLastDigit && !isOperatorAdded){
             currentOperationPos = 1
             isDecimalPoint = false
             isLastDigit = false
             operatorString = operator
-            userInputTextView?.textAlignment = View.TEXT_ALIGNMENT_TEXT_START
+//            userInputTextView?.textAlignment = View.TEXT_ALIGNMENT_TEXT_START
             userInputTextView?.append("\n$operator")
             isOperatorAdded = true
-            userInputTextView?.textAlignment = View.TEXT_ALIGNMENT_VIEW_END
+//            userInputTextView?.textAlignment = View.TEXT_ALIGNMENT_VIEW_END
         }
     }
 
@@ -160,26 +213,27 @@ class MainActivity : AppCompatActivity() {
             currentOperationPos = 1
             isOperatorAdded = false
             isLastDigit = true
-            isDecimalPoint = false
             when(operatorString){
                 "+" -> {
-                    var operands : List<String>? = userInputTextView?.text?.split("\n+")
 
-//                    print(currentOperation)
-//                    print(operands)
+                    if(isDecimalPoint){
+                        output = currentOperation[0].toDouble() + currentOperation[1].toDouble()
+                    }else{
+                        output = currentOperation[0].toLong() + currentOperation[1].toLong()
+                    }
 
-                    output = currentOperation[0].toDouble() + currentOperation[1].toDouble()
+
 
                     currentOperation[0] = output.toString()
                     currentOperation[1] = ""
 
-                    userInputTextView?.append("\n$output")
-
+                    userInputTextView?.text = output.toString()
 
                 }
 
             }
         }
+        isDecimalPoint = false
     }
 
 

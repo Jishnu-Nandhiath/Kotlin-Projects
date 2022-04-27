@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="numberButton">
+    <item name="android:layout_width">80dp</item>
+    <item name="android:layout_height">75dp</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:backgroundTint">#F1FF0F</item>
+    <item name="android:gravity">center_vertical|center_horizontal</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">30sp</item>
+</style>
+
+<style name="operatorButton">
+    <item name="android:layout_width">80dp</item>
+    <item name="android:layout_height">75dp</item>
+    <item name="android:layout_margin">10dp</item>
+    <item name="android:backgroundTint">#F1FF0F</item>
+    <item name="android:gravity">center_vertical|center_horizontal</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textSize">30sp</item>
+</style>
+
+</resources>

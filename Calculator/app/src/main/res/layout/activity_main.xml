@@ -44,47 +44,27 @@
 
             <Button
                 android:id="@+id/numberSeven"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="7"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                />
 
             <Button
                 android:id="@+id/numberFour"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
+                style="@style/numberButton"
                 android:text="4"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+            />
 
             <Button
                 android:id="@+id/numberOne"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
+                style="@style/numberButton"
                 android:text="1"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                />
 
             <Button
                 android:id="@+id/doubleZeros"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="00"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                />
 
 
         </LinearLayout>
@@ -98,60 +78,33 @@
 
             <Button
                 android:id="@+id/operatorDivision"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
+                style="@style/operatorButton"
                 android:text="\u00F7"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+            />
 
             <Button
                 android:id="@+id/numberEight"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
+                style="@style/numberButton"
                 android:text="8"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                />
 
             <Button
                 android:id="@+id/numberFive"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
+                style="@style/numberButton"
                 android:text="5"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                />
 
             <Button
                 android:id="@+id/numberTwo"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="2"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                />
 
             <Button
                 android:id="@+id/numberZero"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="0"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                />
 
 
 
@@ -166,57 +119,33 @@
 
             <Button
                 android:id="@+id/operatorMultiplication"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="X"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/operatorButton"
+                />
 
             <Button
                 android:id="@+id/numberNine"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="9"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                />
 
             <Button
                 android:id="@+id/numberSix"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
+                style="@style/numberButton"
                 android:text="6"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                />
 
             <Button
                 android:id="@+id/numberThree"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="3"
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                />
+
             <Button
                 android:id="@+id/decimalPoint"
-                android:layout_width="80dp"
-                android:layout_height="75dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="#F1FF0F"
-                android:gravity="center_vertical|center_horizontal"
                 android:text="."
-                android:textColor="@color/black"
-                android:textSize="30dp" />
+                style="@style/numberButton"
+                 />
 
 
         </LinearLayout>
@@ -229,7 +158,6 @@
             >
 
             <com.google.android.material.button.MaterialButton
-
                 android:id="@+id/backspace"
                 android:layout_width="80dp"
                 android:layout_height="75dp"
@@ -243,26 +171,16 @@
 
 
             <Button
-                android:id="@+id/operatorAddition"
-            android:layout_width="80dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="#F1FF0F"
-            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/operatorAddition"
             android:text="+"
-            android:textColor="@color/black"
-            android:textSize="30dp" />
+            style="@style/operatorButton"
+                />
 
             <Button
-                android:id="@+id/operatorSubtraction"
-            android:layout_width="80dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="#F1FF0F"
-            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/operatorSubtraction"
             android:text="-"
-            android:textColor="@color/black"
-            android:textSize="30dp" />
+            style="@style/operatorButton"
+            />
 
             <Button
                 android:id="@+id/operatorEquality"

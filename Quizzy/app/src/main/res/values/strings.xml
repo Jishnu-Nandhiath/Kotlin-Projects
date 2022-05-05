@@ -1,8 +1,17 @@
 <resources>
     <string name="app_name">Quizzy</string>
-    <string name="trueText">True</string>
-    <string name="falseText">False</string>
-    <string name="questionText">New Delhi is the Capital of India</string>
+    <string name="trueButton">True</string>
+    <string name="falseButton">False</string>
+    <string name="nextButton">NEXT</string>
+    <string name="prevButton">PREV</string>
     <string name="correctToast">Correct!</string>
     <string name="incorrectToast">Incorrect!</string>
+    <string name="questionDefaultPreview">New Delhi is the Capital of India</string>
+    <string name="questionOcean">The largest ocean in the world is the Atlantic</string>
+    <string name="questionMountain">The largest Mountain in the world is the Everest</string>
+    <string name="questionCountry">The largest Country in the world is Australia</string>
+    <string name="questionContinent">Antarctica is the only continent without permanent residents</string>
+    <string name="questionDesert">Sahara is the largest desert in the world</string>
+    <string name="nextButtonContentDescription">This is a next Button, to move to next question</string>
+    <string name="prevButtonContentDescription">This is a previous Button, to move to previous question</string>
 </resources>

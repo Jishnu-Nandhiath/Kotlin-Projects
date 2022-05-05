@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Quizzy</string>
+    <string name="trueText">True</string>
+    <string name="falseText">False</string>
+    <string name="questionText">New Delhi is the Capital of India</string>
+    <string name="correctToast">Correct!</string>
+    <string name="incorrectToast">Incorrect!</string>
 </resources>

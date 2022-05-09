@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import kotlin.math.abs
 
 private const val TAG = "MainActivity"
@@ -40,6 +41,9 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG,"onCreate(Bundle?) called")
         setContentView(R.layout.activity_main)
 
+        val provider = ViewModelProvider(this)
+        val quizViewModel = provider.get(QuizViewModel :: class.java)
+        Log.d(TAG,"Got a quizViewModel : $quizViewModel")
 
         trueButton = findViewById(R.id.trueButton)
         falseButton = findViewById(R.id.falseButton)
